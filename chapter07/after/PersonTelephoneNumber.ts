@@ -1,5 +1,5 @@
 // クラスの抽出
-class Person {
+export class Person {
     [x: string]: any
 
     constructor() {
@@ -16,7 +16,7 @@ class Person {
     set officeNumber(arg) { this._telephoneNumber.number = arg } 
 }
 
-class TelephoneNumber {
+export class TelephoneNumber {
     [x: string]: any
 
     get areaCode()    {return this._areaCode;}
